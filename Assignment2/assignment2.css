@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap");
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.header{
+    width: 1350px;
+    margin-left: 90px;
+    background-color: rgba(118,242,67,1);
+    display: flex;
+    border-radius:0px 20px;
+    justify-content: center;
+
+}
+.container{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    width: 15%;
+    height: 70px;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 800;
+    font-family: Cambria, serif;
+    line-height: 70px;
+    color: #176930;
+    cursor: pointer;
+}
+.navigation{
+    height: 70px;
+    width: 40%;
+}
+.nav-bar{
+    display: flex;
+}
+.nav-link{
+    list-style-type: none;
+    color: rgba(24,99,33,1);
+    height: 70px;
+    width: 30%;
+    text-align: center;
+    line-height: 70px;
+    font-family: Comic Neue, sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    cursor: pointer;
+}
+.nav-link:hover{
+    color: #fff;
+}
+@media  (max-width:480px) {
+    .header{
+        margin-left: 40px;
+        width: 400px;
+    }
+    .container{
+        flex-direction: column;
+        width: 95%;
+    }
+    .logo{
+        width: 100%;
+        text-align: left;
+    }
+    .navigation{
+        width: 100%;
+        height: auto;
+    }
+    .nav-bar{
+        flex-direction: column;
+    }
+    .nav-link{
+        width: 100%;
+        text-align: left;
+    }
+
+}
